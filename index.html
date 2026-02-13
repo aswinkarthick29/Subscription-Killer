@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="manifest" href="manifest.json">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sub Killer | Action Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="app-container">
+        <header>
+            <h1>Sub Killer</h1>
+            <div class="leak-box">
+                <span>Monthly Leakage</span>
+                <h2 id="total-leak">$0.00</h2>
+            </div>
+        </header>
+
+        <form id="adder-form">
+            <input type="text" id="sub-name" placeholder="Service Name (Netflix, Spotify...)" required>
+            <input type="number" id="sub-price" placeholder="Price ($)" step="0.01" required>
+            <input type="date" id="sub-date" required>
+            <button type="submit" id="add-btn">Add Subscription</button>
+        </form>
+
+        <section id="display-area">
+            </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
